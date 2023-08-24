@@ -1,3 +1,7 @@
+<div align="center">
+<img src="https://raw.githubusercontent.com/Eranot/godot-rush-request/main/plugin-icon.png" width="400"/>
+</div>
+
 # Godot Rush Request 
 
 Rush Request is the easiest way of making HTTP requests with JSON in Godot 4. Inspired by the JS library Axios, it creates requests in a Promise-like way.
@@ -26,7 +30,7 @@ func _ready():
     })
 	
     # Makes a GET request
-	var response: RushRequestResponse = await client.GET("/587c3de4-d119-4166-bd3a-a5272370a5fd")
+    var response: RushRequestResponse = await client.GET("/587c3de4-d119-4166-bd3a-a5272370a5fd")
 	
     if response.is_successful():
         # Returns a Dictionary converted from JSON, if the response Content-Type is set to "application/json"
